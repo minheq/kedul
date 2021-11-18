@@ -1,0 +1,43 @@
+<mjml>
+  {{> head }}
+  <mj-body background-color="#F0F4F8">
+    {{> header }}
+    <mj-section padding="16px" background-color="#FFFFFF">
+      <mj-column>
+        <mj-text color="#102A43" font-weight="500" font-size="34px" line-height="48px">
+          {{{{raw}}}}
+          {{title}} {{businessName}}
+          {{{{/raw}}}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="16px" background-color="#ffffff">
+      <mj-column>
+        <mj-text color="#102A43" font-weight="400" font-size="16px" line-height="24px">
+          {{{{raw}}}}
+          {{invitationFirst}} {{businessName}} {{invitationSecond}}
+          {{{{/raw}}}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="16px" background-color="#ffffff">
+      <mj-column>
+        <mj-button height="40px" width="288px" background-color="#0C6B58" color="#FFFFFF" href="{{{{raw}}}}{{siteUrl}}{{link}}{{{{/raw}}}}" font-weight="bold" font-size="16px">
+          {{{{raw}}}}
+          {{acceptButton}}
+          {{{{/raw}}}}
+        </mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="16px" background-color="#ffffff">
+      <mj-column>
+        <mj-text color="#829AB1" font-weight="400" font-size="16px" line-height="24px">
+          {{{{raw}}}}
+          {{ignoreIfNot}}
+          {{{{/raw}}}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    {{> footer }}
+  </mj-body>
+</mjml>

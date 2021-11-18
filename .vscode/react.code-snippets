@@ -1,0 +1,28 @@
+{
+  "React Component": {
+    "prefix": "rfcp",
+    "body": [
+      "import React from 'react'",
+      "",
+      "interface ${1:${TM_FILENAME_BASE}}Props {",
+      "\t$0",
+      "}",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}} = (props: ${1:${TM_FILENAME_BASE}}Props) => {",
+      "\tconst {} = props;",
+      "",
+      "\treturn (",
+      "\t\t<>",
+      "\t\t</>",
+      "\t)",
+      "}",
+      ""
+    ],
+    "description": "Creates a React Function Component with Props"
+  },
+  "Destructure Props": {
+    "prefix": "dp",
+    "body": ["const { $0 } = props;"],
+    "description": "Destructure props"
+  }
+}

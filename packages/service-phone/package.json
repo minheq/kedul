@@ -1,0 +1,14 @@
+{
+  "name": "@kedul/service-phone",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@kedul/common-server": "1.0.0",
+    "@kedul/common-config": "1.0.0",
+    "@kedul/common-utils": "1.0.0",
+    "aws-sdk": "2.441.0"
+  }
+}

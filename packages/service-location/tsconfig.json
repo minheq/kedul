@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "references": [
+    { "path": "../service-permission" },
+    { "path": "../common-server" },
+    { "path": "../common-utils" }
+  ]
+}

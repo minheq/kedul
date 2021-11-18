@@ -1,0 +1,101 @@
+query CurrentUser {
+  currentUser {
+    ...CurrentUser
+  }
+}
+
+query CurrentBusiness {
+  currentBusiness {
+    ...CurrentBusiness
+  }
+}
+
+query Employees($locationId: ID!) {
+  employees(locationId: $locationId) {
+    ...Employee
+  }
+}
+
+query EmployeesShifts($locationId: ID!, $filter: ShiftsFilter!) {
+  employees(locationId: $locationId) {
+    ...Employee
+    shifts(filter: $filter) {
+      ...Shift
+    }
+  }
+}
+
+query Shifts($locationId: ID!, $filter: ShiftsFilter!) {
+  shifts(locationId: $locationId, filter: $filter) {
+    ...Shift
+  }
+}
+
+query EmployeesAndShifts($locationId: ID!, $filter: ShiftsFilter!) {
+  employees(locationId: $locationId) {
+    ...Employee
+  }
+  shifts(locationId: $locationId, filter: $filter) {
+    ...Shift
+  }
+}
+
+query Employee($id: ID!) {
+  employee(id: $id) {
+    ...Employee
+  }
+}
+
+query EmployeeShifts($id: ID!, $filter: ShiftsFilter!) {
+  employee(id: $id) {
+    ...Employee
+    shifts(filter: $filter) {
+      ...Shift
+    }
+  }
+}
+
+query CurrentUserInvitations {
+  currentUser {
+    id
+    employeeInvitations {
+      ...EmployeeInvitationWithBusinessInfo
+    }
+  }
+}
+
+query EmployeeRoles($locationId: ID!) {
+  employeeRoles(locationId: $locationId) {
+    ...EmployeeRole
+  }
+}
+
+query Locations {
+  locations {
+    ...Location
+  }
+}
+
+query Image($id: ID!) {
+  image(id: $id) {
+    ...Image
+  }
+}
+
+query Location($id: ID!) {
+  location(id: $id) {
+    ...Location
+  }
+}
+
+query Clients($businessId: ID!) {
+  clients(businessId: $businessId) {
+    ...Client
+  }
+}
+
+query Shift($id: ID!) {
+  shift(id: $id) {
+    ...Shift
+  }
+}

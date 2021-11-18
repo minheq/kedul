@@ -1,0 +1,37 @@
+require:
+  - ts-node/register
+
+overwrite: true
+
+hooks:
+  afterAllFileWrite:
+    - prettier --write
+
+config:
+  scalars:
+    Date: Date
+  noNamespaces: true
+  namingConvention:
+    enumValues: change-case#upperCase
+  withComponent: false
+  withHOC: false
+  withHooks: true
+
+generates:
+  # # APP CORE
+  ./packages/app-salon-core/generated/MutationsAndQueries.tsx:
+    schema:
+      - ./packages/app-salon-gateway/schema.ts
+    documents:
+      - ./packages/app-salon-core/documents/Fragments.graphql
+      - ./packages/app-salon-core/documents/Queries.graphql
+      - ./packages/app-salon-core/documents/Mutations.graphql
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+      - scripts/graphql-codegen-plugins/ValidatorsPlugin.ts
+      - scripts/graphql-codegen-plugins/FormPlugin.ts
+      - scripts/graphql-codegen-plugins/QueryPlugin.ts
+    config:
+      apolloReactCommonImportFrom: '@apollo/react-hooks/node_modules/@apollo/react-common'

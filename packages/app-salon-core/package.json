@@ -1,0 +1,25 @@
+{
+  "name": "@kedul/app-salon-core",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@apollo/react-common": "3.0.0",
+    "@apollo/react-hooks": "3.0.0",
+    "@kedul/common-client": "1.0.0",
+    "@kedul/common-config": "1.0.0",
+    "@kedul/common-utils": "1.0.0",
+    "apollo-cache-inmemory": "1.6.0",
+    "apollo-client": "2.6.4",
+    "apollo-link-context": "1.0.18",
+    "apollo-link-error": "1.1.11",
+    "apollo-link-http": "1.5.15",
+    "apollo-link-state": "0.4.2",
+    "apollo-upload-client": "11.0.0",
+    "formik": "2.0.1-rc.13",
+    "paramount-ui": "1.85.1",
+    "react-navigation": "3.11.0"
+  }
+}

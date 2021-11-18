@@ -1,0 +1,15 @@
+<mj-section padding="16px" background-color="#ffffff">
+  <mj-column>
+    <mj-image align="left" src="{{{{raw}}}}{{logoUrl}}{{{{/raw}}}}" target="_blank" width="100px"></mj-image>
+    <mj-text color="#102A43" font-weight="400" font-size="16px">
+      {{{{raw}}}}
+      {{companyAbout}}
+      {{{{/raw}}}}
+    </mj-text>
+    <mj-text color="#102A43" font-weight="400" font-size="16px">
+      {{{{raw}}}}
+      {{contactByReply}}
+      {{{{/raw}}}}
+    </mj-text>
+  </mj-column>
+</mj-section>

@@ -1,0 +1,18 @@
+{
+  "name": "@kedul/common-utils",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "date-fns": "2.2.1",
+    "google-libphonenumber": "3.2.5",
+    "lodash": "4.17.11",
+    "rrule": "2.6.2",
+    "pino": "5.13.2",
+    "pino-pretty": "3.2.1",
+    "validator": "10.11.0",
+    "yup": "0.26.10"
+  }
+}

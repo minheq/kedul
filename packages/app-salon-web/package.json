@@ -1,0 +1,39 @@
+{
+  "name": "@kedul/app-salon-web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "test:e2e": "env-cmd --file ../../.env jest",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "clean": "rimraf build"
+  },
+  "dependencies": {
+    "@kedul/app-salon-core": "1.0.0",
+    "@kedul/app-salon-bootstrap": "1.0.0",
+    "@kedul/common-client": "1.0.0",
+    "@kedul/common-config": "1.0.0",
+    "@kedul/common-utils": "1.0.0",
+    "@react-navigation/core": "3.4.2",
+    "@react-navigation/web": "1.0.0-alpha.8",
+    "core-js": "3.1.4",
+    "react": "16.10.2",
+    "react-dom": "16.10.2"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

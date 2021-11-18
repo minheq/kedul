@@ -1,0 +1,8 @@
+{
+  "name": "Kedul Development Container",
+  "dockerFile": "Dockerfile",
+
+  "appPort": ["3000", "4000"],
+
+  "postCreateCommand": "yarn install"
+}

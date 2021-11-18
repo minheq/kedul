@@ -1,0 +1,21 @@
+{
+  "recommendations": [
+    "formulahendry.auto-rename-tag",
+    "wraith13.unsaved-files-vscode",
+    "esbenp.prettier-vscode",
+    "eg2.vscode-npm-script",
+    "kumar-harsh.graphql-for-vscode",
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "mikestead.dotenv",
+    "msjsdiag.debugger-for-chrome",
+    "naumovs.color-highlight",
+    "streetsidesoftware.code-spell-checker",
+    "github.vscode-pull-request-github",
+    "visualstudioexptteam.vscodeintellicode",
+    // "ms-vscode-remote.vscode-remote-extensionpack", // For remote development
+    "ms-azuretools.vscode-docker",
+    "gruntfuggly.todo-tree",
+    "orta.vscode-jest"
+  ]
+}

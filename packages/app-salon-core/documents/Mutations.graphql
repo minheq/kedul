@@ -1,0 +1,406 @@
+mutation CreateBusiness($input: CreateBusinessInput!) {
+  createBusiness(input: $input) {
+    business {
+      ...Business
+    }
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation UpdateBusiness($input: UpdateBusinessInput!) {
+  updateBusiness(input: $input) {
+    business {
+      ...Business
+    }
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation DeleteBusiness($input: DeleteBusinessInput!) {
+  deleteBusiness(input: $input) {
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation CreateLocation($input: CreateLocationInput!) {
+  createLocation(input: $input) {
+    location {
+      ...Location
+    }
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation UpdateLocation($input: UpdateLocationInput!) {
+  updateLocation(input: $input) {
+    location {
+      ...Location
+    }
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation DeleteLocation($input: DeleteLocationInput!) {
+  deleteLocation(input: $input) {
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation LogInFacebook($input: LogInFacebookInput!) {
+  logInFacebook(input: $input) {
+    isSuccessful
+    accessToken
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation LogInGoogle($input: LogInGoogleInput!) {
+  logInGoogle(input: $input) {
+    isSuccessful
+    accessToken
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation LogInEmailStart($input: LogInEmailStartInput!) {
+  logInEmailStart(input: $input) {
+    state
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation LogInEmailVerify($input: LogInEmailVerifyInput!) {
+  logInEmailVerify(input: $input) {
+    accessToken
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation LogInPhoneStart($input: LogInPhoneStartInput!) {
+  logInPhoneStart(input: $input) {
+    state
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation LogInPhoneVerify($input: LogInPhoneVerifyInput!) {
+  logInPhoneVerify(input: $input) {
+    accessToken
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation UpdateUserEmailStart($input: UpdateUserEmailStartInput!) {
+  updateUserEmailStart(input: $input) {
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation UpdateUserEmailVerify($input: UpdateUserEmailVerifyInput!) {
+  updateUserEmailVerify(input: $input) {
+    user {
+      id
+      account {
+        ...UserAccount
+      }
+    }
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation UpdateUserPhoneStart($input: UpdateUserPhoneStartInput!) {
+  updateUserPhoneStart(input: $input) {
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation UpdateUserPhoneVerify($input: UpdateUserPhoneVerifyInput!) {
+  updateUserPhoneVerify(input: $input) {
+    user {
+      id
+      account {
+        ...UserAccount
+      }
+    }
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation UpdateUserProfile($input: UpdateUserProfileInput!) {
+  updateUserProfile(input: $input) {
+    user {
+      id
+      profile {
+        ...UserProfile
+      }
+    }
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation LinkFacebookAccount($input: LinkFacebookAccountInput!) {
+  linkFacebookAccount(input: $input) {
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation DisconnectFacebook($input: DisconnectFacebookInput!) {
+  disconnectFacebook(input: $input) {
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation LinkGoogleAccount($input: LinkGoogleAccountInput!) {
+  linkGoogleAccount(input: $input) {
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation DisconnectGoogle($input: DisconnectGoogleInput!) {
+  disconnectGoogle(input: $input) {
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation DeactivateUser($input: DeactivateUserInput!) {
+  deactivateUser(input: $input) {
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation CreateEmployee($input: CreateEmployeeInput!) {
+  createEmployee(input: $input) {
+    employee {
+      ...Employee
+    }
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation UpdateEmployee($input: UpdateEmployeeInput!) {
+  updateEmployee(input: $input) {
+    employee {
+      ...Employee
+    }
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation UpdateEmployeeRole($input: UpdateEmployeeRoleInput!) {
+  updateEmployeeRole(input: $input) {
+    employee {
+      ...Employee
+    }
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation UpdateEmployeeRolePermissions(
+  $input: UpdateEmployeeRolePermissionsInput!
+) {
+  updateEmployeeRolePermissions(input: $input) {
+    employeeRole {
+      ...EmployeeRole
+    }
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation DeleteEmployee($input: DeleteEmployeeInput!) {
+  deleteEmployee(input: $input) {
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation UpdateClient($input: UpdateClientInput!) {
+  updateClient(input: $input) {
+    isSuccessful
+    client {
+      ...Client
+    }
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation CreateClient($input: CreateClientInput!) {
+  createClient(input: $input) {
+    isSuccessful
+    client {
+      ...Client
+    }
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation InviteEmployee($input: InviteEmployeeInput!) {
+  inviteEmployee(input: $input) {
+    employee {
+      ...Employee
+    }
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation AcceptEmployeeInvitation($input: AcceptEmployeeInvitationInput!) {
+  acceptEmployeeInvitation(input: $input) {
+    employee {
+      ...Employee
+    }
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation DeclineEmployeeInvitation($input: DeclineEmployeeInvitationInput!) {
+  declineEmployeeInvitation(input: $input) {
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation CancelEmployeeInvitation($input: CancelEmployeeInvitationInput!) {
+  cancelEmployeeInvitation(input: $input) {
+    employee {
+      ...Employee
+    }
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation UnlinkEmployee($input: UnlinkEmployeeInput!) {
+  unlinkEmployee(input: $input) {
+    employee {
+      ...Employee
+    }
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation CreateShift($input: CreateShiftInput!) {
+  createShift(input: $input) {
+    shift {
+      ...Shift
+    }
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation UpdateShift($input: UpdateShiftInput!) {
+  updateShift(input: $input) {
+    shift {
+      ...Shift
+    }
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}
+
+mutation CancelShift($input: CancelShiftInput!) {
+  cancelShift(input: $input) {
+    isSuccessful
+    userError {
+      ...UserError
+    }
+  }
+}

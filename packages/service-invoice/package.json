@@ -1,0 +1,15 @@
+{
+  "name": "@kedul/service-invoice",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "db:migrate:up": "ts-node ../../scripts/migrateUp.ts",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@kedul/service-permission": "1.0.0",
+    "@kedul/common-server": "1.0.0",
+    "@kedul/common-utils": "1.0.0",
+    "uuid": "3.3.2"
+  }
+}

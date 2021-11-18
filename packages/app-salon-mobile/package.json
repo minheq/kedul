@@ -1,0 +1,36 @@
+{
+  "name": "KedulSalon",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "clean": "react-native-clean-project --remove-iOS-build --remove-iOS-pods --remove-android-build --keep-pods --keep-node-modules --keep-brew",
+    "start": "react-native start",
+    "run-ios": "react-native run-ios",
+    "run-android": "react-native run-android"
+  },
+  "workspaces": {
+    "nohoist": [
+      "react-native-gesture-handler",
+      "react-native-image-crop-picker",
+      "react-native-reanimated",
+      "react-native-vector-icons",
+      "react-navigation"
+    ]
+  },
+  "dependencies": {
+    "@kedul/app-salon-core": "1.0.0",
+    "@kedul/common-client": "1.0.0",
+    "@kedul/common-config": "1.0.0",
+    "@kedul/common-utils": "1.0.0",
+    "react": "16.10.2",
+    "react-native": "0.60.5",
+    "react-native-gesture-handler": "1.2.2",
+    "react-native-image-crop-picker": "0.25.0",
+    "react-native-reanimated": "1.2.0",
+    "react-native-vector-icons": "6.6.0",
+    "react-navigation": "3.11.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

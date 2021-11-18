@@ -1,0 +1,16 @@
+{
+  "name": "@kedul/common-server",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@kedul/common-config": "1.0.0",
+    "@kedul/common-utils": "1.0.0",
+    "eventemitter2": "5.0.1",
+    "knex": "0.19.4",
+    "pg": "7.11.0",
+    "uuid": "3.3.2"
+  }
+}

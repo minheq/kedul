@@ -1,0 +1,25 @@
+{
+  "name": "@kedul/app-salon-bootstrap",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "bootstrap": "ts-node scripts/bootstrap.ts"
+  },
+  "dependencies": {
+    "@kedul/common-config": "1.0.0",
+    "@kedul/common-server": "1.0.0",
+    "@kedul/common-utils": "1.0.0",
+    "@kedul/service-activity": "1.0.0",
+    "@kedul/service-appointment": "1.0.0",
+    "@kedul/service-business": "1.0.0",
+    "@kedul/service-location": "1.0.0",
+    "@kedul/service-client": "1.0.0",
+    "@kedul/service-image": "1.0.0",
+    "@kedul/service-invoice": "1.0.0",
+    "@kedul/service-mail": "1.0.0",
+    "@kedul/service-phone": "1.0.0",
+    "@kedul/service-service": "1.0.0",
+    "@kedul/service-employee": "1.0.0",
+    "@kedul/service-user": "1.0.0"
+  }
+}

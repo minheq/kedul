@@ -1,0 +1,333 @@
+fragment UserError on UserError {
+  code
+  message
+  errors {
+    field
+    message
+  }
+}
+
+fragment UserAccount on UserAccount {
+  email
+  phoneNumber
+  countryCode
+  isEmailVerified
+  isPhoneVerified
+}
+
+fragment User on User {
+  id
+  isActive
+  createdAt
+  updatedAt
+  account {
+    ...UserAccount
+  }
+  profile {
+    ...UserProfile
+  }
+}
+
+fragment Policy on Policy {
+  id
+  version
+  name
+  createdAt
+  updatedAt
+  statements {
+    effect
+    actions
+    resources {
+      entity
+      entityId
+      locationId
+    }
+    conditions {
+      entity
+      field
+      value
+      operator
+    }
+  }
+}
+
+fragment CurrentUser on User {
+  ...User
+  businesses {
+    ...Business
+  }
+  policies {
+    ...Policy
+  }
+}
+
+fragment CurrentBusiness on Business {
+  ...Business
+  assignedLocations {
+    ...Location
+  }
+}
+
+fragment UserProfile on UserProfile {
+  fullName
+  gender
+  profileImage {
+    ...Image
+  }
+}
+
+fragment Business on Business {
+  id
+  name
+  email
+  countryCode
+  phoneNumber
+  facebookUrl
+  owner {
+    ...User
+  }
+  createdAt
+  updatedAt
+  deletedAt
+  logoImage {
+    ...Image
+  }
+}
+
+fragment EmployeeRole on EmployeeRole {
+  id
+  name
+  permissions
+}
+
+fragment CalendarEventRecurrence on CalendarEventRecurrence {
+  startDate
+  frequency
+  interval
+  count
+  weekStart
+  until
+  timezoneId
+  bySetPosition
+  byMonth
+  byMonthDay
+  byYearDay
+  byWeekNumber
+  byWeekDay
+  byHour
+  byMinute
+  bySecond
+}
+
+fragment ContactDetails on ContactDetails {
+  countryCode
+  phoneNumber
+  email
+}
+
+fragment Address on Address {
+  streetAddressOne
+  streetAddressTwo
+  district
+  city
+  country
+  postalCode
+}
+
+fragment Location on Location {
+  id
+  name
+  contactDetails {
+    ...ContactDetails
+  }
+  address {
+    ...Address
+  }
+  businessHours {
+    startDate
+    endDate
+    recurrence {
+      ...CalendarEventRecurrence
+    }
+  }
+  createdAt
+  deletedAt
+  updatedAt
+}
+
+fragment LocationWithEmployees on Location {
+  ...Location
+  employees {
+    ...Employee
+  }
+}
+
+fragment LocationWithEmployeeRoles on Location {
+  ...Location
+  employeeRoles {
+    ...EmployeeRole
+  }
+}
+
+fragment Image on Image {
+  id
+  width
+  height
+  format
+  url
+  filename
+  mimetype
+  encoding
+  createdAt
+  cloudStorageProvider
+  sizes {
+    width
+    height
+    size
+    key
+    url
+  }
+}
+
+fragment EmployeeInvitation on EmployeeInvitation {
+  id
+  phoneNumber
+  countryCode
+  token
+  expirationDate
+  createdAt
+  updatedAt
+}
+
+fragment EmployeeInvitationWithBusinessInfo on EmployeeInvitation {
+  ...EmployeeInvitation
+  employee {
+    ...Employee
+    location {
+      ...Location
+      business {
+        ...Business
+      }
+    }
+  }
+}
+
+fragment EmployeeSalarySettings on EmployeeSalarySettings {
+  wage
+  productCommission
+  serviceCommission
+  voucherCommission
+}
+
+fragment EmployeeShiftSettings on EmployeeShiftSettings {
+  appointmentColor
+  canHaveAppointments
+}
+
+fragment EmployeeEmployment on EmployeeEmployment {
+  title
+  employmentEndDate
+  employmentStartDate
+}
+
+fragment Employee on Employee {
+  id
+  location {
+    ...Location
+  }
+
+  employeeRole {
+    ...EmployeeRole
+  }
+
+  contactDetails {
+    ...ContactDetails
+  }
+  user {
+    id
+    isActive
+    profile {
+      ...UserProfile
+    }
+    account {
+      ...UserAccount
+    }
+  }
+  profile {
+    ...UserProfile
+  }
+  notes
+  salarySettings {
+    ...EmployeeSalarySettings
+  }
+  shiftSettings {
+    ...EmployeeShiftSettings
+  }
+  employment {
+    ...EmployeeEmployment
+  }
+  invitation {
+    ...EmployeeInvitation
+  }
+  createdAt
+  deletedAt
+  updatedAt
+}
+
+fragment Client on Client {
+  id
+  isBanned
+
+  contactDetails {
+    ...ContactDetails
+  }
+
+  profile {
+    ...UserProfile
+  }
+
+  notes
+  importantNotes
+  referralSource
+  discount
+
+  createdAt
+  updatedAt
+  deletedAt
+}
+
+fragment ShiftRecurrence on ShiftRecurrence {
+  id
+  recurrence {
+    ...CalendarEventRecurrence
+  }
+  createdAt
+  updatedAt
+}
+
+fragment Shift on Shift {
+  id
+  recurrence {
+    ...ShiftRecurrence
+  }
+  employee {
+    ...Employee
+  }
+
+  location {
+    ...Location
+  }
+
+  breakDuration
+  startDate
+  endDate
+  notes
+
+  status
+  createdAt
+  updatedAt
+  canceledAt
+  startedAt
+  completedAt
+  markedNoShowAt
+}

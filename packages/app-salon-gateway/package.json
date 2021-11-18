@@ -1,0 +1,35 @@
+{
+  "name": "@kedul/app-salon-gateway",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node-dev --inspect --transpileOnly --respawn --ignore-watch node_modules --no-notify server.ts",
+    "db:create": "ts-node scripts/createDb.ts",
+    "db:drop": "ts-node scripts/dropDb.ts",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@apollo/react-common": "3.0.0",
+    "@apollo/react-hooks": "3.0.0",
+    "@kedul/common-config": "*",
+    "@kedul/common-server": "*",
+    "@kedul/common-utils": "*",
+    "@kedul/service-activity": "*",
+    "@kedul/service-appointment": "*",
+    "@kedul/service-business": "*",
+    "@kedul/service-location": "*",
+    "@kedul/service-client": "*",
+    "@kedul/service-image": "*",
+    "@kedul/service-invoice": "*",
+    "@kedul/service-mail": "*",
+    "@kedul/service-phone": "*",
+    "@kedul/service-service": "*",
+    "@kedul/service-employee": "*",
+    "@kedul/service-user": "*",
+    "apollo-server": "2.4.8",
+    "express": "4.16.4",
+    "graphql": "14.5.8",
+    "graphql-relay": "0.6.0"
+  }
+}

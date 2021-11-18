@@ -1,0 +1,26 @@
+{
+  "files": [],
+  "references": [
+    { "path": "app-salon-core" },
+    { "path": "app-salon-gateway" },
+    { "path": "common-client" },
+    { "path": "common-config" },
+    { "path": "common-server" },
+    { "path": "common-utils" },
+    { "path": "common-test-utils" },
+    { "path": "service-activity" },
+    { "path": "service-appointment" },
+    { "path": "service-business" },
+    { "path": "service-location" },
+    { "path": "service-client" },
+    { "path": "service-image" },
+    { "path": "service-invoice" },
+    { "path": "service-mail" },
+    { "path": "service-notification" },
+    { "path": "service-permission" },
+    { "path": "service-phone" },
+    { "path": "service-service" },
+    { "path": "service-employee" },
+    { "path": "service-user" }
+  ]
+}

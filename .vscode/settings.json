@@ -1,0 +1,119 @@
+{
+  // EDITOR
+  // "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // TYPESCRIPT
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.reportStyleChecksAsWarnings": false,
+  "typescriptHero.imports.organizeOnSave": false,
+
+  // ESLINT & PRETTIER
+  "eslint.packageManager": "yarn",
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    { "language": "typescript", "autoFix": true },
+    { "language": "typescriptreact", "autoFix": true }
+  ],
+
+  // T0D0-TREE
+  "todo-tree.filtering.excludeGlobs": ["android", "ios"],
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "foreground": "#C99A2E",
+      "background": "white",
+      "type": "text-and-comment",
+      "icon": "issue-opened"
+    },
+    "REVIEW": {
+      "foreground": "#186FAF",
+      "background": "white",
+      "type": "text-and-comment",
+      "icon": "comment-discussion"
+    },
+    "FIXME": {
+      "foreground": "#A61B1B",
+      "background": "white",
+      "type": "text-and-comment",
+      "icon": "stop"
+    },
+    "NOTE": {
+      "foreground": "#147D64",
+      "background": "white",
+      "type": "text-and-comment",
+      "icon": "info"
+    }
+  },
+
+  // SPELL CHECKER
+  "cSpell.words": [
+    "afterware",
+    "amazonaws",
+    "apollographql",
+    "awsses",
+    "backend",
+    "browserslist",
+    "changeset",
+    "cloudform",
+    "cloudformation",
+    "cloudfront",
+    "codebuild",
+    "codegen",
+    "dataloader",
+    "deepmerge",
+    "devtools",
+    "dtstart",
+    "emerg",
+    "exenv",
+    "formik",
+    "gapi",
+    "gmail",
+    "graphql",
+    "hocs",
+    "hoverable",
+    "inmemory",
+    "jsonb",
+    "kedul",
+    "lerna",
+    "libphonenumber",
+    "locize",
+    "loginticket",
+    "memoized",
+    "mimetype",
+    "mjml",
+    "nginx",
+    "nohoist",
+    "onboarding",
+    "passwordless",
+    "pino",
+    "positioner",
+    "postgres",
+    "qlid",
+    "refetch",
+    "repo",
+    "respawn",
+    "rrule",
+    "scrollable",
+    "sonarts",
+    "sql",
+    "storyshots",
+    "testid",
+    "truthy",
+    "typedefs",
+    "uuidv",
+    "validators",
+    "workspaces",
+    "xfbml",
+    "xlarge",
+    "xsmall",
+    "xxlarge",
+    "yarnhook"
+  ],
+
+  // DEBUGGING
+  "debug.node.autoAttach": "off",
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

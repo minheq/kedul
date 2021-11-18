@@ -1,0 +1,9 @@
+<mj-section background-color="#ffffff" background-repeat="repeat" padding="20px 0" text-align="center" vertical-align="top">
+  <mj-column>
+    <mj-social align="center">
+      <mj-social-element name="facebook"></mj-social-element>
+      <mj-social-element name="pinterest"></mj-social-element>
+      <mj-social-element name="instagram"></mj-social-element>
+    </mj-social>
+  </mj-column>
+</mj-section>

@@ -1,0 +1,61 @@
+<mjml>
+  {{> head }}
+  <mj-body background-color="#F0F4F8">
+    {{> header }}
+    <mj-section padding="16px" background-color="#FFFFFF">
+      <mj-column>
+        <mj-text color="#102A43" font-weight="500" font-size="34px" line-height="48px">
+          {{{{raw}}}}
+          {{title}}
+          {{{{/raw}}}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="16px" background-color="#ffffff">
+      <mj-column>
+        <mj-button height="40px" width="288px" background-color="#0C6B58" color="#FFFFFF" href="{{{{raw}}}}{{link}}{{{{/raw}}}}" font-weight="bold" font-size="16px">
+          {{{{raw}}}}
+          {{loginButton}}
+          {{{{/raw}}}}
+        </mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0px" background-color="#ffffff">
+      <mj-column>
+        <mj-text align="center" color="#102A43" font-weight="400" font-size="16px">
+          {{{{raw}}}}
+          {{or}}
+          {{{{/raw}}}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="16px" background-color="#ffffff">
+      <mj-column>
+        <mj-text color="#102A43" font-weight="400" font-size="16px" line-height="20px">
+          {{{{raw}}}}
+          {{copyPaste}}
+          {{{{/raw}}}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="16px 40px 16px 40px" background-color="#FFFFFF">
+      <mj-column padding="16px" background-color="#F0F4F8">
+        <mj-text color="#102A43" align="center" font-weight="600" font-size="34px">
+          {{{{raw}}}}
+          {{code}}
+          {{{{/raw}}}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="16px" background-color="#ffffff">
+      <mj-column>
+        <mj-text color="#829AB1" font-weight="400" font-size="16px" line-height="20px">
+          {{{{raw}}}}
+          {{ignoreIfNot}}
+          {{{{/raw}}}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    {{> footer }}
+  </mj-body>
+</mjml>

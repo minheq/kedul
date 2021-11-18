@@ -1,0 +1,24 @@
+{
+  "extends": "../../tsconfig.json",
+  "exclude": ["./dist", "node_modules"],
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "references": [
+    { "path": "../service-activity" },
+    { "path": "../service-appointment" },
+    { "path": "../service-location" },
+    { "path": "../service-business" },
+    { "path": "../service-client" },
+    { "path": "../service-image" },
+    { "path": "../service-invoice" },
+    { "path": "../service-mail" },
+    { "path": "../service-phone" },
+    { "path": "../service-service" },
+    { "path": "../service-employee" },
+    { "path": "../service-user" },
+    { "path": "../common-client" },
+    { "path": "../common-config" },
+    { "path": "../common-utils" }
+  ]
+}

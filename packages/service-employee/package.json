@@ -1,0 +1,17 @@
+{
+  "name": "@kedul/service-employee",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "db:migrate:up": "ts-node ../../scripts/migrateUp.ts",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@kedul/common-server": "*",
+    "@kedul/common-utils": "*",
+    "@kedul/service-user": "*",
+    "@kedul/service-location": "*",
+    "@kedul/service-permission": "*",
+    "uuid": "3.3.2"
+  }
+}

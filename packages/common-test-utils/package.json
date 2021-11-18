@@ -1,0 +1,13 @@
+{
+  "name": "@kedul/common-test-utils",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@kedul/common-server": "1.0.0",
+    "@kedul/common-utils": "1.0.0",
+    "knex": "0.19.4"
+  }
+}

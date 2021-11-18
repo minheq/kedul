@@ -1,0 +1,21 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "references": [
+    { "path": "../service-appointment" },
+    { "path": "../service-location" },
+    { "path": "../service-business" },
+    { "path": "../service-client" },
+    { "path": "../service-invoice" },
+    { "path": "../service-mail" },
+    { "path": "../service-phone" },
+    { "path": "../service-service" },
+    { "path": "../service-employee" },
+    { "path": "../service-user" },
+    { "path": "../common-config" },
+    { "path": "../common-server" },
+    { "path": "../common-utils" }
+  ]
+}
